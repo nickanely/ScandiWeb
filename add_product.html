@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Product</title>
+</head>
+<body>
+  <h1>Add a New Product</h1>
+  <form action="add_product.php" method="post">
+    <label for="sku">SKU:</label>
+    <input type="text" id="sku" name="sku">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="price">Price:</label>
+    <input type="text" id="price" name="price">
+
+    <label for="attribute">Attribute:</label>
+    <select id="attribute" name="attribute">
+      <option value="size">Size (MB)</option>
+      <option value="weight">Weight (Kg)</option>
+      <option value="dimensions">Dimensions (HxWxL)</option>
+    </select>
+
+    <label for="value">Value:</label>
+    <input type="text" id="value" name="value">
+
+    <input type="submit" value="Add Product">
+  </form>
+</body>
+</html>
